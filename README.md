@@ -1,18 +1,5 @@
 # writeapaper
 
-This is a template repository to write scientific papers with latex and git. 
+Copy of Davide's repository on how to write a paper. 
 
-A github action will compile the paper at every commit. The latest version is made available at this permanent URL
-
-> [github.com/dgerosa/writeapaper/blob/build/draft.pdf](https://github.com/dgerosa/writeapaper/blob/build/draft.pdf)
-
-
-#### Instructions: 
-
-- Click on "use this template", top right corner. Create your repository.
-- Remove the placeholders in the `draft` directory.
-- Pick your journal from the `template` directory and copy its content into `draft`.
-
-There are two variables in `.github/workflows/writeapaper.yml` that you might want to change, which set the directory (`DIR`) and the filename (`FILE`) of the tex file you want to compile.
-
-If you need some common journal abbreviations, you can copy `more/journals.sty` in your working directory. But don't do it, [filltex](https://github.com/dgerosa/filltex) is better.
+Every time I want to write a different paper, click on "use template" (top right corner) on this repository and create a new repository which we name after whatever the ongoing project is (e.g. PROJECT). The "draft" folder has the version which will be compiled each time, so we simply choose from one of the templates (in the template folder) and copy the files into the draft folder. Then, simply git clone on to our local machine and edit it in our favourite text editor - vscode. After all the changes are done, we add, commit and push. Everytime this is done, the git repository PROJECT will compile the draft. The pdf can be recovered if we go to the build branch of that repository
